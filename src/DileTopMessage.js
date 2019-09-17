@@ -27,7 +27,8 @@ export class DileTopMessage extends DileSlideDownMixin(LitElement) {
         flex-grow: 1;
       }
       .icon {
-        width: 20px;
+        min-width: var(--dile-top-message-icon-size, 20px);
+        width: var(--dile-top-message-icon-size, 20px);
         cursor: pointer;
       }
     `];
