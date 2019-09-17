@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="en-GB">
+<head>
+  <meta charset="utf-8">
+  <style>
+    body {
+      background: #fafafa;
+      margin: 0;
+      padding: 0;
+    }
+    .content {
+      padding: 15px;
+    }
+  </style>
+</head>
+<body>
+  <div id="demo"></div>
+  <div class="content">
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse soluta voluptatum ipsa quos laudantium. Quo doloremque explicabo veniam necessitatibus harum nobis, pariatur animi cumque facilis dolorem et quas! Pariatur, sapiente.</p>
+    <p>Iure, in aspernatur placeat obcaecati fugiat ducimus reprehenderit, distinctio laudantium, minima inventore consequatur cum recusandae at? Explicabo, quibusdam in, atque ab eaque tenetur recusandae incidunt inventore quia assumenda reiciendis pariatur.</p>
+    <p>Eligendi, consequuntur tempore commodi illo iure qui minus aut rerum dolore dolores incidunt, perspiciatis quis ipsum ut ratione dolorem iste? Officiis corrupti officia tempora voluptatem, obcaecati nam earum ut architecto.</p>
+    <p>Explicabo blanditiis ipsum perspiciatis at eveniet consequatur nostrum maiores odio porro debitis illum reprehenderit repellendus rem praesentium eaque placeat, voluptas quas corporis quod. Corrupti nobis atque perferendis dolorum dolor sequi.</p>
+    <p>Blanditiis, laborum dolor enim repellat facere quas provident ad impedit consequuntur, quaerat accusamus tempore ut nostrum nihil quo a doloremque, maxime consequatur sapiente illum vel distinctio. Iure est eligendi earum!</p>
+    <button id="theButton">Open</button>
+    <button id="theButtonMsg">Open with message 'This is a new message'</button>
+  </div>
+  <script type="module">
+    import { html, render } from 'lit-html';
+    import '../dile-top-message.js';
+
+    render(
+      html`
+        <dile-top-message id="message">
+          Hello Polydile friends!!
+        </dile-top-message>
+      `,
+      document.querySelector('#demo')
+    );
+
+    document.getElementById('theButton').addEventListener('click', () => {
+      document.getElementById('message').open();
+    });
+    document.getElementById('theButtonMsg').addEventListener('click', () => {
+      document.getElementById('message').openMessage('This is a new message');
+    });
+    
+  </script>
+</body>
+</html>
