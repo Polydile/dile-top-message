@@ -25,6 +25,12 @@ export class DileTopMessage extends DileSlideDownMixin(LitElement) {
       }
       .content {
         flex-grow: 1;
+        margin-right: 5px;
+      }
+      @media(min-width: 420px) {
+        .content {
+          margin-right: 15px;
+        } 
       }
       .icon {
         min-width: var(--dile-top-message-icon-size, 20px);
