@@ -40,7 +40,7 @@ export class DileTopMessage extends DileSlideDownMixin(LitElement) {
        */
       opened: { type: Boolean },
       /**
-       * If true the feedbak box is in opened status.
+       * Message to display. If message='' then the component will display the content comming from the slot.
        */
       message: { type: String },
     };
@@ -90,5 +90,11 @@ export class DileTopMessage extends DileSlideDownMixin(LitElement) {
   openMessage(msg) {
     this.message = msg;
     this.open();
+  }
+
+  updated(changedProperties) {
+    if(changedProperties.has('opened') && this.opened) {
+      this.open();
+    } 
   }
 }
