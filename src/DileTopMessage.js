@@ -36,6 +36,9 @@ export class DileTopMessage extends DileSlideDownMixin(LitElement) {
         min-width: var(--dile-top-message-icon-size, 20px);
         width: var(--dile-top-message-icon-size, 20px);
         cursor: pointer;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
       }
     `];
   }
