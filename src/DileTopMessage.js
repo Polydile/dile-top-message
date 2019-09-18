@@ -64,7 +64,7 @@ export class DileTopMessage extends DileSlideDownMixin(LitElement) {
       <div id="message">
         <section>
           <div class="content">
-            ${this.message != ''
+            ${this.message != '' && this.message != undefined
               ? this.message
               : html`<slot></slot>`
             }
