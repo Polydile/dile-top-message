@@ -40,3 +40,14 @@ document.addEventListener("DOMContentLoaded", function(event) {
 });
 </script>
 ```
+
+## Style customization
+
+You can customize the message box interface by using the CSS custom properties bellow.
+
+Custom property | Description | Default
+----------------|-------------|---------
+--dile-top-message-color | Message text and icon color | #fff
+--dile-top-message-background-color | Message background color | #666
+--dile-top-message-padding | Padding for the message box | 15px
+--dile-top-message-icon-size | Close icon size | 20px
