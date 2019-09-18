@@ -87,8 +87,10 @@ export class DileTopMessage extends DileSlideDownMixin(LitElement) {
   }
 
   close() {
-    this.slideHide(this.display);
-    this.opened = false;
+    if(this.opened) {
+      this.slideHide(this.display);
+      this.opened = false;
+    }
   }
 
   open() {
