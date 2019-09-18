@@ -23,6 +23,14 @@
     "es-dev-server": "^1.5.0",
     "@open-wc/demoing-storybook": "^0.3.0"
   },
+  "keywords": [
+    "message",
+    "feedback",
+    "web components",
+    "javascript",
+    "litelement",
+    "custom element"
+  ],
   "repository": {
     "type": "git",
     "url": "git+https://github.com/Polydile/dile-top-message.git"
