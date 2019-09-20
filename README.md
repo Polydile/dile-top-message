@@ -1,6 +1,10 @@
 # \<dile-top-message>
 
-This webcomponent follows the [open-wc](https://github.com/open-wc/open-wc) recommendation.
+Web Component to show a custom message to the user. This component display the message until the user clicks in the included close icon. There are some posible ways to set the message and open the message interface. Also there is an animation when the message opens and closes.
+
+You may see different implementations running in the [demos page](https://dile-top-message.polydile.com).
+
+This webcomponent is based on LitElement and follows the [open-wc](https://github.com/open-wc/open-wc) recommendation.
 
 ## Installation
 ```bash
