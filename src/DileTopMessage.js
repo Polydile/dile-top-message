@@ -78,7 +78,7 @@ export class DileTopMessage extends DileSlideDownMixin(LitElement) {
               : html`<slot></slot>`
             }
           </div>
-          <div class="icon" @click="${this.close}">
+          <div class="icon" @click="${this.closeByUser}">
             ${ closeIcon }
           </div>
         </section>
@@ -91,6 +91,13 @@ export class DileTopMessage extends DileSlideDownMixin(LitElement) {
       this.slideHide(this.display);
       this.opened = false;
     }
+  }
+
+  closeByUser() {
+    this.dispatchEvent(new CustomEvent('dile-top-message-closed-by-user', {
+      detail: this
+    }));
+    this.close();
   }
 
   open() {

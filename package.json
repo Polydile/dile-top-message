@@ -1,6 +1,6 @@
 {
   "name": "dile-top-message",
-  "version": "1.0.7",
+  "version": "1.1.0",
   "description": "Webcomponent dile-top-message following open-wc recommendations",
   "author": "dile-top-message",
   "license": "MIT",
@@ -15,7 +15,7 @@
   },
   "dependencies": {
     "dile-close-icon-template": "^1.0.5",
-    "dile-slide-down-mixin": "^1.0.1",
+    "dile-slide-down-mixin": "^1.0.2",
     "lit-element": "^2.0.1",
     "lit-html": "^1.0.0"
   },

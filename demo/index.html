@@ -30,7 +30,10 @@
 
     render(
       html`
-        <dile-top-message id="message">
+        <dile-top-message 
+          id="message" 
+          @dile-top-message-closed-by-user="${() => console.log('The component was closed by a user click in the close icon')}"
+        >
           Hello Polydile friends!!
         </dile-top-message>
       `,

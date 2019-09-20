@@ -29,7 +29,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
 </script>
 ```
 
-Another possibility is to simply call the openMessage() method, giving the message with the method 
+Another possibility is to simply call the openMessage() method, setting the message in the method parameter. 
 
 ```html
 <dile-top-message id="msgElement"></dile-top-message>
@@ -40,6 +40,15 @@ document.addEventListener("DOMContentLoaded", function(event) {
 });
 </script>
 ```
+
+## Properties
+
+- **opened**: If true the feedbak box is in opened status.
+- **message**: Message to display. Remember that, if message='' or undefined, then the component will display the content comming from the slot.
+
+## Events
+
+- **dile-top-message-closed-by-user**: This event is dispatched when the component closes by a user click on the close icon.
 
 ## Style customization
 
