@@ -1,3 +1,7 @@
+# Moved
+
+**This package has moved** and is now available at [@dile/dile-message](https://github.com/Polydile/dile-components). Please update your dependencies. This repository is no longer maintained.
+
 # \<dile-top-message>
 
 Web Component to show a custom message to the user. This component display the message until the user clicks in the included close icon. There are some posible ways to set the message and open the message interface. Also there is an animation when the message opens and closes.
@@ -33,7 +37,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
 </script>
 ```
 
-Another possibility is to simply call the openMessage() method, setting the message in the method parameter. 
+Another possibility is to simply call the openMessage() method, setting the message in the method parameter.
 
 ```html
 <dile-top-message id="msgElement"></dile-top-message>
